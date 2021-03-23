@@ -35,7 +35,7 @@ put数据时(hashMap的size为0)，判断当前hashTab的size是否>=阈值，�
 
 ### 替代品 - ConCurrentHashMap
 Hash 是线程不安全的，在jdk1.5之后，可以是使用ConcurrentHashMap替代 HashMap。
-``ConcurrentHashMap``使用了分段锁保证了线程安全，相对于HashTable拥有更高的性能。
+``ConcurrentHashMap``使用了分段锁(jdk1.8后为 synchronized关键字 + CAS)保证了线程安全，相对于HashTable拥有更高的性能。
 
 ### 数据结构图
 ![image1](../../../res/hashmap/image1.png)
