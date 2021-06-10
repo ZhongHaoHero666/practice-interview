@@ -39,3 +39,5 @@ Hash 是线程不安全的，在jdk1.5之后，可以是使用ConcurrentHashMap�
 
 ### 数据结构图
 ![image1](../../../res/hashmap/image1.png)
+
+本文章参考[链接](https://www.jianshu.com/p/497967713014)
