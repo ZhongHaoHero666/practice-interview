@@ -36,7 +36,7 @@
        C->B->A
 + 示意图
 
-![image2](../../../res/lanchMode/image2.png)
+![image2](../../../res/launchMode/image2.png)
 
 
 ###  singleTask（栈内复用模式）
@@ -47,14 +47,14 @@
 +  需要注意的是，此时启动Activity是以任务栈切换的方式启动的，新启动的任务栈会放置在旧的任务栈上边。（任务栈的关联依赖taskAffinity属性，此属性默认是包名，如果属性相同/任务关联时，那么不会有任务栈切换效果，如果不相同，则切换效果为任务栈切换）
 
 
-![image3](../../../res/lanchMode/image3.png)
+![image3](../../../res/launchMode/image3.png)
 ###  singleInstance（单实例模式）
 +   全局单例模式，启动场景类似于singleTask（栈内复用模式），但区别是：
     + singleTask（栈内复用模式） 声明一个任务栈内只有这个类型的一个实例，可以包含其他实例。
     + singleInstance（单实例模式）声明一个任务栈仅有这个类型的一个实例，无其他实例
 +   不管是哪个应用程序来访问这个活动，都共用的同一个返回栈
 
-![image4](../../../res/lanchMode/image4.png)
+![image4](../../../res/launchMode/image4.png)
 
 ###
 
